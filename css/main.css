@@ -254,6 +254,7 @@ header .second-nav .support .support-details p {
   overflow: hidden;
   width: calc(20% - 0.5rem);
   padding: 10px;
+  margin-bottom: 20px;
 }
 .main .popular-products .products-cards .item .products-img {
   margin-top: 30px;
