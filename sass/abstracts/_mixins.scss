@@ -1,0 +1,24 @@
+@use 'variables';
+
+@mixin rounded-box {
+    border: 1px solid variables.$light-gray-color;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin type ($color){
+    background-color: $color;
+    padding: 5px 20px 5px 30px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    border-bottom-right-radius: 30px;
+    color: #fff
+}
+

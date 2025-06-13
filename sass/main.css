@@ -1,0 +1,44 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Header */
+header .navbar .navbar-brand {
+  font-size: 2.25rem;
+  color: #253D4E;
+  margin-right: 87px;
+}
+header .navbar .navbar-brand img {
+  width: 72px;
+  height: 55px;
+}
+header .navbar .navbar-nav {
+  width: 45%;
+}
+header .navbar .navbar-nav .header-search {
+  border: 2px solid #BCE3C9;
+  border-radius: 4px;
+  padding: 8px 20px;
+  width: 100%;
+}
+header .navbar .navbar-nav .header-search .nav-item {
+  width: 35%;
+}
+header .navbar .navbar-nav .header-search form {
+  width: 65%;
+}
+header .navbar .navbar-nav .header-search form .form-control {
+  border: none;
+  border-left: 1px solid #ECECEC;
+  border-radius: 0;
+}
+header .navbar .left-links .nav-item:nth-child(1) {
+  border: 1px solid #ECECEC;
+  border-radius: 5px;
+}
+header .navbar .left-links .nav-item:nth-child(1) a {
+  color: #3BB77E;
+}
+header .navbar .left-links .nav-item:nth-child(1) .dropdown-toggle::after {
+  color: #7E7E7E;
+}/*# sourceMappingURL=main.css.map */

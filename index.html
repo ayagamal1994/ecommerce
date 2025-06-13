@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <!-- Header -->
+     <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="navs-cols w-100">
+                <div class="first-nav d-flex align-items-center justify-content-between">
+                <a class="navbar-brand fw-semibold" href="#">
+                    <img src="images/logo.png" alt="logo"> Logo
+                </a>
+                
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="header-search d-flex align-items-center">
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            All Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        </li>
+                        
+                        <form class="d-flex align-items-center" role="search">
+                            <input class="form-control me-2 mx-2" type="search" placeholder="Search" aria-label="Search"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                            </svg>
+                        </form>
+                    </div>
+                </ul>
+                
+                <div class="left-links " >
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="images/location-icon.png"alt="location"> Your location
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex" href="#">
+                                <img class="mx-1" src="images/heart-icon.png" alt="heart"><span>Wishlist</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex" href="#">
+                                <img class="mx-1" src="images/shopping-icon.png" alt="cart"><span>Cart</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex" href="#">
+                                <img class="mx-1" src="images/user-icon.png" alt="user"><span>Account</span>
+                            </a>
+                        </li>
+                    </ul>
+                
+                
+                </div>
+                </div>
+
+                <div class="second-nav">
+                    <nav class="navbar navbar-expand-lg d-flex justify-content-between align-items-center">
+                <ul class="button-browse list-unstyled me-auto mb-2 mb-lg-0">
+                    <li class="nav-item btn dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="images/squares-icon.png"alt="location"> সব ক্যাটেগরি ব্রাউজ করুন
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="links navbar-nav mb-2 mb-lg-0 list-unstyled d-flex align-items-center gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex" href="#">
+                            <img class="mx-1" src="images/hot-icon.png" alt="hot">অফার
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex" href="#">
+                            হোম
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex" href="#">
+                            দোকান
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            বিক্রেতা
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            মেগা মেনু
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            পেজ
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link d-flex" href="#">
+                            যোগাযোগ
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                <div class="support d-flex align-items-center">
+                    <div class="support-icon">
+                        <img src="images/icon-headphone.svg.png" alt="headphone">
+                    </div>
+                    <div class="support-details">
+                        <h3>লাইভ চ্যাট</h3>
+                        <p>24/7 Support Center</p>
+                    </div>
+                </div>
+            </div>
+                </div>
+                </div>
+            </div>
+        </nav>
+     </header>
+
+
+     <div class="layout">
+        <div class="container">
+            <div class="d-flex">
+            <aside class="aside">
+                <div class="category">
+                    <h2 class="aside-title">Category</h2>
+                    <div class="category-items">
+                        <div class="item d-flex justify-content-between align-items-center px-3 py-2 rounded-3 my-3">
+                            <div class="item-details d-flex align-items-center gap-3 ">
+                                <img src="images/category-1.svg.png" alt="category">
+                                <h5 class="m-0">খাবার</h5>
+                            </div>
+                            <div class="item-number">
+                                <span>3</span>
+                            </div>
+                        </div>
+                        <div class="item d-flex justify-content-between align-items-center px-3 py-2 rounded-3 my-3">
+                            <div class="item-details d-flex align-items-center gap-3 ">
+                                <img src="images/category-2.svg.png" alt="category">
+                                <h5 class="m-0">তৈল</h5>
+                            </div>
+                            <div class="item-number">
+                                <span>4</span>
+                            </div>
+                        </div>
+                        <div class="item d-flex justify-content-between align-items-center px-3 py-2 rounded-3 my-3">
+                            <div class="item-details d-flex align-items-center gap-3 ">
+                                <img src="images/category-3.svg.png" alt="category">
+                                <h5 class="m-0">পোসাক</h5>
+                            </div>
+                            <div class="item-number">
+                                <span>5</span>
+                            </div>
+                        </div>
+                        <div class="item d-flex justify-content-between align-items-center px-3 py-2 rounded-3 my-3">
+                            <div class="item-details d-flex align-items-center gap-3">
+                                <img src="images/category-4.svg.png" alt="category">
+                                <h5 class="m-0">Baking material</h5>
+                            </div>
+                            <div class="item-number">
+                                <span>8</span>
+                            </div>
+                        </div>
+                        <div class="item d-flex justify-content-between align-items-center px-3 py-2 rounded-3 my-3">
+                            <div class="item-details d-flex align-items-center gap-3">
+                                <img src="images/category-5.svg.png" alt="category">
+                                <h5 class="m-0">Fresh Fruit</h5>
+                            </div>
+                            <div class="item-number">
+                                <span>10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <h2 class="aside-title">New products</h2>
+                    <div class="products-items">
+                        <div class="item d-flex align-items-center gap-3">
+                            <div class="item-img">
+                                <img src="images/thumbnail-3.jpg.png" alt="product">
+                            </div>
+                            <div class="item-details d-flex flex-column">
+                                <h5>আমের জুস</h5>
+                                <p>$99.50</p>
+                                <img src="images/div.product-rate.png" alt="star">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="item d-flex align-items-center gap-3">
+                            <div class="item-img">
+                                <img src="images/thumbnail-4.jpg.png" alt="product">
+                            </div>
+                            <div class="item-details d-flex flex-column">
+                                <h5>পাকা কলা</h5>
+                                <p>$89.50</p>
+                                <img src="images/div.product-rate.png" alt="star">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="item d-flex align-items-center gap-3">
+                            <div class="item-img">
+                                <img src="images/thumbnail-5.jpg.png" alt="product">
+                            </div>
+                            <div class="item-details d-flex flex-column">
+                                <h5>তরমুজ</h5>
+                                <p>$25</p>
+                                <img src="images/div.product-rate.png" alt="star">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </aside>
+            <main class="main">
+                <section class="banner">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="images/Rectangle.png" class="d-block w-100" alt="rectangle">
+                            <div class="carousel-caption ">
+                                <h2>"অবিশ্বাস্য গ্রোসারি <br> ডিল মিস করবেন না"</h2>
+                                <p>Sign up for the daily newsletter</p>
+                                <form class="banner-form">
+                                    <input type="email" placeholder="Your email address" name="email">
+                                    <input type="submit" value="subscribe">
+                                </form>
+                            </div>
+                            </div>
+                            <div class="carousel-item">
+                            <img src="images/rectangle2.png" class="d-block w-100" alt="rectangle2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>"অবিশ্বাস্য গ্রোসারি <br> ডিল মিস করবেন না"</h2>
+                                <p>Sign up for the daily newsletter</p>
+                                <form class="banner-form">
+                                    <input type="email" placeholder="Your email address" name="email">
+                                    <input type="submit" value="subscribe">
+                                </form>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        
+                        </div>
+                </section>
+
+                <section class="popular-products">
+                    <div class="classification d-flex justify-content-between align-items-center">
+                        <div class="classification-head">
+                            <h3>জনপ্রিয় প্রোডাক্ট</h3>
+                        </div>
+                        <ul class="classification-links d-flex gap-3">
+                            <li><a class="active" href="#">সমস্ত</a></li>
+                            <li><a href="#">দুধ এবং দই</a></li>
+                            <li><a href="#">কফি ও চা</a></li>
+                            <li><a href="#">পোষা প্রাণীর খাবার</a></li>
+                            <li><a href="#">শাকসবজি</a></li>
+                            <li><a href="#">ফলমূল</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="products-cards">
+                        <div class="d-flex  flex-wrap justify-content-between  align-items-center">
+                            <div class="item d-flex flex-column ">
+                                <div class="type">
+                                    <h5>Hot</h5>
+                                </div>
+                                <div class="products-img align-self-center">
+                                        <img src="images/prod1.png" alt="product">
+                                    </div>
+                                    <span>Snack</span>
+                                    <h3>Seeds of Change Organic Quinoe</h3>
+                                    <div class="stars d-flex">
+                                        <img src="images/div.product-rate.png" alt="star">
+                                        <span>(4.0)</span>
+                                    </div>
+                                    <div class="by d-flex gap-1">
+                                        <span>By</span>
+                                        <p>NestFood</p>
+                                    </div>
+                                    <div class="price d-flex justify-content-between align-items-center gap-1">
+                                        <h5 class="now">$28.85</h5>
+                                        <h5 class="before">$32.8</h5>
+                                        <button class="btn d-flex">
+                                            <img src="images/car.png" alt="shopping car">
+                                            <span>Add</span>
+                                        </button>
+                                    </div>
+                            </div>
+                            <div class="item d-flex flex-column ">
+                                <div class="type">
+                                    <h5>Sale</h5>
+                                </div>
+                                <div class="products-img align-self-center">
+                                        <img src="images/prod2.png" alt="product">
+                                    </div>
+                                    <span>Hodo Foods</span>
+                                    <h3>All Natural Italian-Style Chicken Meatballs</h3>
+                                    <div class="stars d-flex gap-3">
+                                        <img src="images/div.product-rate.png" alt="star">
+                                        <span>(3.5)</span>
+                                    </div>
+                                    <div class="by d-flex gap-1">
+                                        <span>By</span>
+                                        <p>Stouffer</p>
+                                    </div>
+                                    <div class="price d-flex justify-content-between align-items-center gap-1">
+                                        <h5 class="now">$52.85</h5>
+                                        <h5 class="before">$55.8</h5>
+                                        <button class="btn d-flex">
+                                            <img src="images/car.png" alt="shopping car">
+                                            <span>Add</span>
+                                        </button>
+                                    </div>
+                            </div>
+                            <div class="item d-flex flex-column ">
+                                <div class="type">
+                                    <h5>New</h5>
+                                </div>
+                                <div class="products-img align-self-center">
+                                        <img src="images/prod3.png" alt="product">
+                                    </div>
+                                    <span>Snack</span>
+                                    <h3>Angie’s Boomchickapop Sweet & Salty</h3>
+                                    <div class="stars d-flex gap-3">
+                                        <img src="images/div.product-rate.png" alt="star">
+                                        <span>(4.0)</span>
+                                    </div>
+                                    <div class="by d-flex gap-1">
+                                        <span>By</span>
+                                        <p>StarKist</p>
+                                    </div>
+                                    <div class="price d-flex justify-content-between align-items-center gap-1">
+                                        <h5 class="now">$48.85</h5>
+                                        <h5 class="before">$52.8</h5>
+                                        <button class="btn d-flex">
+                                            <img src="images/car.png" alt="shopping car">
+                                            <span>Add</span>
+                                        </button>
+                                    </div>
+                            </div>
+                            <div class="item d-flex flex-column ">
+                            
+                                <div class="products-img align-self-center">
+                                        <img src="images/prod4.png" alt="product">
+                                    </div>
+                                    <span>Vegetables</span>
+                                    <h3>Foster Farms Takeout Crispy Classic</h3>
+                                    <div class="stars d-flex gap-3">
+                                        <img src="images/div.product-rate.png" alt="star">
+                                        <span>(4.0)</span>
+                                    </div>
+                                    <div class="by d-flex gap-1">
+                                        <span>By</span>
+                                        <p>NestFood</p>
+                                    </div>
+                                    <div class="price d-flex justify-content-between align-items-center gap-1">
+                                        <h5 class="now">$17.85</h5>
+                                        <h5 class="before">$19.8</h5>
+                                        <button class="btn d-flex">
+                                            <img src="images/car.png" alt="shopping car">
+                                            <span>Add</span>
+                                        </button>
+                                    </div>
+                            </div>
+                            <div class="item d-flex flex-column ">
+                                <div class="type">
+                                    <h5>-14%</h5>
+                                </div>
+                                <div class="products-img align-self-center">
+                                        <img src="images/prod5.png" alt="product">
+                                    </div>
+                                    <span>Pet Foods</span>
+                                    <h3>Blue Diamond Almonds Lightly</h3>
+                                    <div class="stars d-flex gap-3">
+                                        <img src="images/div.product-rate.png" alt="star">
+                                        <span>(4.0)</span>
+                                    </div>
+                                    <div class="by d-flex gap-1">
+                                        <span>By</span>
+                                        <p>NestFood</p>
+                                    </div>
+                                    <div class="price d-flex justify-content-between align-items-center gap-1">
+                                        <h5 class="now">$23.85</h5>
+                                        <h5 class="before">$25.8</h5>
+                                        <button class="btn d-flex gap-1">
+                                            <img src="images/car.png" alt="shopping car">
+                                            <span>Add</span>
+                                        </button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="shop">
+                    <div class="row align-items-stretch">
+                        <div class="col-12 col-md-6 col-lg-4 p-3">
+                            <div class="item">
+                                <h3>Everyday Fresh & Clean with Our Products</h3>
+                                <button class="btn">Shop Now</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 p-3">
+                            <div class="item">
+                                <h3>Make your Breakfast Healthy and Easy</h3>
+                                <button class="btn">Shop Now</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 p-3">
+                            <div class="item">
+                                <h3>Everyday Fresh & Clean with Our Products</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            </div>
+
+            <section class="stay-home">
+                <div class="container">
+                    <div class="stay-home-wrapper">
+                        <div class="stay-home-img">
+                            <img src="images/banner-9.png.png" alt="banner">
+                        </div>
+                        <div class="stay-home-details">
+                            <h2>Stay home & get your daily needs from our shop</h2>
+                            <p>Start You'r Daily Shopping with <span>Nest Mart</span></p>
+                            <form>
+                                <input type="email" placeholder="Your email address" name="email">
+                                <input type="submit" value="subscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="item-wrapper col-12 col-md-4 col-lg-2 p-3">
+                            <div class="item">
+                                <div class="logo d-flex align-items-center gap-2">
+                                    <img src="images/logo.png" alt="logo">
+                                    <h3>Logo</h3>
+                                </div>
+                                <p>Awesome grocery store website template</p>
+                                <div class="item-info d-flex align-items-start gap-1">
+                                    <img src="images/List → Item → icon-location.svg.png" alt="icon">
+                                    <p>Address: 5171 W Campbell Ave <br>undefined Kent, Utah 53127 United States</p>
+                                </div>
+                                <div class="item-info d-flex align-items-start gap-1">
+                                    <img src="images/List → Item → icon-contact.svg.png" alt="icon">
+                                    <p>Call Us:(+91) - 540-025-124553</p>
+                                </div>
+                                <div class="item-info d-flex align-items-start gap-1">
+                                    <img src="images/List → Item → icon-email-2.svg.png" alt="icon">
+                                    <p>Email:sale@Nest.com</p>
+                                </div>
+                                <div class="item-info d-flex align-items-start gap-1">
+                                    <img src="images/List → Item → icon-clock.svg.png" alt="icon">
+                                    <p>Hours:10:00 - 18:00, Mon - Sat</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="item-wrapper col-6 col-md-4 col-lg-2 p-3">
+                            <div class="item">
+                                <h3>Company</h3>
+                                <ul class="links">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Delivery Information</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Support Center</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-wrapper col-6 col-md-4 col-lg-2 p-3">
+                            <div class="item">
+                                <h3>Account</h3>
+                                <ul class="links">
+                                    <li><a href="#">Sign In</a></li>
+                                    <li><a href="#">View Cart</a></li>
+                                    <li><a href="#">My Wishlist</a></li>
+                                    <li><a href="#">Track My Order</a></li>
+                                    <li><a href="#">Help Ticket</a></li>
+                                    <li><a href="#">Shipping Details</a></li>
+                                    <li><a href="#">Compare products</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-wrapper col-6 col-md-4 col-lg-2 p-3">
+                            <div class="item">
+                                <h3>Corporate</h3>
+                                <ul class="links">
+                                    <li><a href="#">Become a Vendor</a></li>
+                                    <li><a href="#">Affiliate Program</a></li>
+                                    <li><a href="#">Farm Business</a></li>
+                                    <li><a href="#">Farm Careers</a></li>
+                                    <li><a href="#">Our Suppliers</a></li>
+                                    <li><a href="#">Accessibility</a></li>
+                                    <li><a href="#">Promotions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-wrapper col-6 col-md-4 col-lg-2 p-3">
+                            <div class="item">
+                                <h3>Popular</h3>
+                                <ul class="links">
+                                    <li><a href="#">Milk & Flavoured Milk</a></li>
+                                    <li><a href="#">Butter and Margarine</a></li>
+                                    <li><a href="#">Eggs Substitutes</a></li>
+                                    <li><a href="#">Marmalades</a></li>
+                                    <li><a href="#">Sour Cream and Dips</a></li>
+                                    <li><a href="#">Tea & Kombucha</a></li>
+                                    <li><a href="#">Cheese</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-wrapper col-12 col-md-4 col-lg-2 p-3">
+                            <div class="item">
+                                <h3>Install App</h3>
+                                <div class="download d-flex justify-content-between align-items-center">
+                                    <img src="images/Link → app-store.jpg.png" alt="download">
+                                    <img src="images/Link → google-play.jpg.png" alt="download">
+                                </div>
+                                <p>Secured Payment Gateways</p>
+                                <div class="follow d-flex align-items-center gap-1">
+                                    <h5>follow</h5>
+                                    <div class="icons">
+                                        <img src="images/Link.png" alt="icon">
+                                        <img src="images/Link (1).png" alt="icon">
+                                        <img src="images/Link (2).png" alt="icon">
+                                        <img src="images/Link (3).png" alt="icon">
+                                        <img src="images/Link (4).png" alt="icon">
+                                        
+                                    </div>
+                                </div>
+                                <p>Up to 15% discount on your first subscribe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone d-flex align-items-center justify-content-between">
+                        <div class="rights">
+                            <p>© 2022, Nest - HTML Ecommerce Template <br>All rights reserved</p>
+                        </div>
+                        <div class="phones d-flex gap-3">
+                            <div class="item d-flex align-items-center gap-1">
+                                <img src="images/phone-call.svg.png" alt="phone">
+                                <div class="phone-details">
+                                    <h5>01234567</h5>
+                                    <p>Working 8:00 - 22:00</p>
+                                </div>
+                            </div>
+                            <div class="item d-flex align-items-center gap-1">
+                                <img src="images/phone-call.svg.png" alt="phone">
+                                <div class="phone-details">
+                                    <h5>01234567</h5>
+                                    <p>24/7 Support Center</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+     </div>
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
